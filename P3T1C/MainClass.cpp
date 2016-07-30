@@ -33,7 +33,7 @@ void main()
 	}
 	catch (...)
 	{
-		std::cout << "Numero invalido";
+		std::cout << "N\243mero invalido";
 	}
 	std::cin.get();
 }

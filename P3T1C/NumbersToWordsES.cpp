@@ -13,9 +13,9 @@ std::string NumbersToWordsES::billion(long long number) //from 1,000,000,000,000
 	if (number >= 1000000000000LL)
 	{
 		if (number == 1000000000000LL)
-			return "UN BILLÓN ";
+			return "UN BILL\242N ";
 		if (number < 2000000000000LL)
-			return "UN BILLÓN " + million(number % 1000000000000LL);
+			return "UN BILL\242N " + million(number % 1000000000000LL);
 		return thousand(number / 1000000000000LL) + "BILLONES " + million(number % 1000000000000LL);
 	}
 	return million(number);
@@ -26,9 +26,9 @@ std::string NumbersToWordsES::million(long long number) //from 1,000,000 to 999,
 	if (number >= 1000000)
 	{
 		if (number == 1000000)
-			return "UN MILLÓN ";
+			return "UN MILL\242N ";
 		if (number < 2000000)
-			return "UN MILLÓN " + thousand(number % 1000000);
+			return "UN MILL\242N " + thousand(number % 1000000);
 		return thousand(number / 1000000) + "MILLONES " + thousand(number % 1000000);
 	}
 	return thousand(number);
